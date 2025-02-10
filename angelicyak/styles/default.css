@@ -1,7 +1,7 @@
-* {
+body {
     text-align: center;
     margin: auto;
-    max-width: 80%;
+    max-width: 600px;
 }
 
 header {
@@ -11,7 +11,7 @@ header {
     color: #ffffff;
 }
 
-header nav a, footer nav a {
+header nav a, footer nav a:not(.not-nav){
     background-color: #ffffff;
     border-radius: 2%;    
     box-shadow: 0 5px 5px #8d5929;
