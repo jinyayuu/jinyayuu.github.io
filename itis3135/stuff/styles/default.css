@@ -1,0 +1,32 @@
+h2 {
+    font-family: Papyrus;
+    color: black;
+    margin: auto auto 20%;
+}
+
+h1{
+    color: white;
+}
+p{
+    font-family: Comic Sans MS;
+    color: rgb(238, 219, 219);
+}
+
+ul li {
+    text-align: center;
+    list-style-position: inside;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 40%;
+    color:aliceblue;
+    text-decoration: underline;
+    border: black solid 30px;
+    border-left-style: dashed;
+    border-right-style:dotted;
+    border-top-style:double;
+    border-bottom-style:groove;
+}
+
+p{
+    text-align: center;
+    
+}
