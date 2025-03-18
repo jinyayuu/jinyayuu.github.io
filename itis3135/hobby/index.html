@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Digital Art</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <style>
+        
+        body {
+            background-color: #1b2b57;
+            color: #ffffff;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        main {
+            background-color: #ffffff;
+            color: #070a2a;
+            width: 80%;
+            margin: auto;
+            border-radius: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-top: 30px;
+            
+        }
+
+        footer {
+            padding: 20px;
+            margin: auto;
+        }
+
+        footer a {
+            color:rgb(0, 183, 255);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header nav a {
+            background-color: #ffffff;
+            border-radius: 15px;    
+            color: #070a2a;
+            font-size: 20px;
+            line-height: 40px;
+            margin: 5px;
+            padding: 5px 20px;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        h2 {
+            background-color: #0d1d58;
+            border-radius: 15px;    
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 40px;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-transform: capitalize;
+            width: 80%;
+        }
+
+        .gallery {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: top;
+            margin: auto;
+            padding:0;
+            gap: 10px;
+        }
+        .gallery figure{
+            margin: 0 auto;
+            padding: 10px;
+            
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: auto;
+            max-height: 500px;
+            object-fit:contain;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        figcaption{
+            text-align: center;
+            margin: auto;
+            max-width: 200px;
+            color:#49474f;
+            font-size: 10px;
+        }
+
+        table {
+            margin: auto;
+            width: 350px;      
+        }
+
+        td {
+            border-top: solid 2px #0d0528; 
+        }
+
+        label{
+            font-size:20px;
+            font-weight: bold; 
+        }
+
+        form {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+        }
+
+        input, select, textarea{
+            display:block;
+            padding:5px;
+            margin:10px auto 30px auto;
+            width: 100%;
+            box-sizing:border-box;
+            border-radius:0.30rem; 
+        }
+
+        input[type="radio"], input[type="checkbox"]{
+            display:inline;
+            width:25px;
+            margin: 0px 0px;
+            padding: 0px;
+        }
+
+        input[type="submit"] {
+            max-width:200px;
+            max-height:100px;
+            margin:auto auto;
+            font-weight:bold;
+            font-size: 15px ;
+        }  
+        
+        .active {
+            display:block;
+        }
+
+        .inactive {
+            display: none;
+        }
+
+        p, ul, form{
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 10px;
+            text-align: left; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Digital Artistry</h1>
+        <nav>
+            <a href="#home" onclick="showHome()">Being An Artist</a>
+            <a href="#about" onclick="showAbout()">About Me</a>
+            <a href="#portfolio" onclick="showPortfolio()">Portfolio</a>
+            <a href="#events" onclick="showEvents()">Vendoring Events</a>
+            <a href="#commissions" onclick="showCommissions()">Commissions</a>
+            <a href="#form" onclick="showForm()">Commission Form</a> 
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active">
+            <h2>Being An Artist</h2>
+            <figure>
+                <img src="images/desk.jpg">
+                <figcaption>My Art Set Up</figcaption>
+            </figure>
+            <p>No one artist is ever the same! Each artist has their own distinct style, assortment of tools, and techniques that let transcribe their ideas into the real world.</p>
+            <p>I personally am a digital artist, who uses a EX-Pen Deco drawing tablet along with my Asus laptop. The digital program I use is Paint Tool SAI for illustration along with Figma for graphic design cases. My illustrative style use to be rather anime in that there was emphasis on line work and cel-shaded coloring. Now I've adopted a more paintery style with colored rendering and painted textures!</p>
+        </section>
+        <section id="about" class="inactive">
+            <h2>About Me</h2>
+            <figure>
+                <img src="images/me.jpg">
+                <figcaption><i>Image of Me</i></figcaption>
+            </figure>
+            <p>Hello! I'm an artist and a big consumer of anything pretty, dramatic, and story driven, which I hope to reflect in my art! Currently focusing on full rendered illustrations :).</p>
+            <p>I first started illustration at a very young age, but with more traditional mediums such as acrylic painting, sketching, chinese painting, and many more. I started doing digital illustration when I was given my first Ipad. Later in life I was gifted an old graphics tablet, which really launched me into doing digital art over traditional.</p>
+        </section>
+        <section id="portfolio" class="inactive">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/5x7-greenchime.png">
+                    <figcaption><i>Wind chime hanging from bamboo<br>(Drawn by Me)</i></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/5x7-howls.png">
+                    <figcaption><i>A flowering hill against a sky<br>(Drawn by Me)</i></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/5x7-sky.png">
+                    <figcaption><i>Reflection of the sky in water<br>(Drawn by Me)</i></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/5x7-reeds.png">
+                    <figcaption><i>Someone standing in some reeds<br>(Drawn by Me)</i></figcaption>
+                </figure>
+            </div>
+            
+        </section>
+        <section id="events" class="inactive">
+            <h2>Vendoring Events</h2>
+            <figure>
+                <img src="images/helloasia-small.jpg">
+                <figcaption><i>Vendoring at Hello Asia</i></figcaption>
+            </figure>
+            <h3>Upcoming Events</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date + Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hello Asia</td>
+                        <td>03/16/2029 - Popp Martin Student Union</td>
+                    </tr>
+                    <tr>
+                        <td>Gold Arts Convention</td>
+                        <td>10/25/2037 - Cone Center</td>
+                    </tr>
+                    <tr>
+                        <td>Animazement</td>
+                        <td>03/11/2141 - Raleigh Convention Center</td>
+                    </tr>
+                    <tr>
+                        <td>Momo Con</td>
+                        <td>05/19/2539 - Georgia Convention Center</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Previous Events</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date + Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Anime Expo</td>
+                        <td>12/25/2001 - Popp Martin Student Union</td>
+                    </tr>
+                    <tr>
+                        <td>Buford Convetnion</td>
+                        <td>09/12/1323 - Cone Center</td>
+                    </tr>
+                    <tr>
+                        <td>Lotus Lily Arts</td>
+                        <td>03/11/1199 - Raleigh Convention Center</td>
+                    </tr>
+                    <tr>
+                        <td>Norms Loft</td>
+                        <td>01/01/200BC - UNC Charlotte</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>Want to see me at an event near you?<br>Let me know!</h4>
+        </section>
+        <section id="commissions" class="inactive">
+            <h2>Commissioning</h2>
+            <h3>What is a Commission?</h3>
+            <p>I do commissioned work! A commission is a request for an artist to illustrate something for you. Think when Kings would commission paintings for their palace, same idea! Most cases now a days, commissioned work is used for personal or commercial intentions. There are many artists that live off doing commisions for clients,</p>
+            <figure>
+                <img src="images/commission-ex.jpg">
+                <figcaption><i>Example of a commission<br>(Drawn by me)</i></figcaption>
+            </figure>
+            <h2>My Commission TOS</h2>
+            <h3>Artist's Rights</h3>
+            <ul>
+                <li>I am allowed to decline any request for whatever reason I may have.</li>
+                <li>I am allowed to cancel a request if the client is excessively rude or inappropriate. The client will be blacklisted and not refunded.</li>
+                <li>I am allowed to use the art for self-promotion and record the process on social media unless discussed otherwise.</li>
+            </ul>
+            <h3>What Can be Commissioned</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Will Draw</th>
+                        <th>Won't Draw</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OCs</td>
+                        <td>NSFW</td>
+                    </tr>
+                    <tr>
+                        <td>Fanart</td>
+                        <td>Mecha</td>
+                    </tr>
+                    <tr>
+                        <td>Perspective</td>
+                        <td>Elderly</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Payment + Refunding</h3>
+            <ul>
+                <li>All prices are in USD.</li>
+                <li>Payment will be through Paypal.</li>
+                <li>Price will be discussed and mutually agreed on before any payment is sent.</li>
+                <li>Full refund will be provided <em>only if requested BEFORE sketch confirmation.</em></li>
+            </ul>
+        </section>
+        <section id="form" class="inactive">
+            <h2>Commission Form</h2> 
+            <h3>Thank You for Considering Me For a Commission!</h3>
+            <figure>
+                <img src="images/clearing.jpg">
+                <figcaption><i>Example of a commission<br>(Drawn by me)</i></figcaption>
+            </figure>
+            
+            <form id="commission-form" method="post">
+                <label id="name-label">Name: </label><input id="name" type="text" placeholder="Enter your name" required/>
+                <label id="email-label">Email: </label><input id="email" type="email" placeholder="Enter your email" required/>
+                
+                <label>Art style selection: </label>
+                  <p> 
+                    <input type="radio" name="style" value="Illustrated"/> Illustrated
+                  </p>
+                  <p>
+                    <input type="radio" name="style" value="Cel-Shaded"/> Cel-Shaded
+                  </p>
+                <label>What Would You Like Draw? </label>
+                    <p>Please provide a detailed description of poses, characters, environments, etc that you would like included.</p>
+                    <textarea rows="3" cols="10"></textarea>
+                <label>Additions? (optional)</label>
+                  <p> 
+                    <input type="checkbox" value="additional_character"/> Additional Character 
+                  </p>
+                  <p>
+                    <input type="checkbox" value="detailed_background"/> Detailed Background
+                  </p>
+                  <p>
+                    <input type="checkbox" value="two_props"/> Two Props
+                  </p>
+                <label>REQUIRED</label>
+                  <p> 
+                    <input type="checkbox" value="tos" required/> I agree and have read the TOS. 
+                  </p>
+                <input type="submit" id="submit" value="Submit"/>
+              </form>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>Designed By <a href="angelainnovations.co/">Angela Innovations</a> &copy; 2025</p> 
+    </footer>
+
+    <script>        
+        function showHome(){
+            document.getElementById("home").style.display ="block";
+            document.getElementById("about").style.display ="none";
+            document.getElementById("portfolio").style.display ="none";
+            document.getElementById("events").style.display ="none";
+            document.getElementById("commissions").style.display ="none";
+            document.getElementById("form").style.display ="none";
+        }
+
+        function showAbout(){
+            document.getElementById("home").style.display ="none";
+            document.getElementById("about").style.display ="block";
+            document.getElementById("portfolio").style.display ="none";
+            document.getElementById("events").style.display ="none";
+            document.getElementById("commissions").style.display ="none";
+            document.getElementById("form").style.display ="none";
+        }
+
+        function showPortfolio(){
+            document.getElementById("home").style.display ="none";
+            document.getElementById("about").style.display ="none";
+            document.getElementById("portfolio").style.display ="block";
+            document.getElementById("events").style.display ="none";
+            document.getElementById("commissions").style.display ="none";
+            document.getElementById("form").style.display ="none";
+        }
+
+        function showEvents(){
+            document.getElementById("home").style.display ="none";
+            document.getElementById("about").style.display ="none";
+            document.getElementById("portfolio").style.display ="none";
+            document.getElementById("events").style.display ="block";
+            document.getElementById("commissions").style.display ="none";
+            document.getElementById("form").style.display ="none";
+        }
+
+        function showCommissions(){
+            document.getElementById("home").style.display ="none";
+            document.getElementById("about").style.display ="none";
+            document.getElementById("portfolio").style.display ="none";
+            document.getElementById("events").style.display ="none";
+            document.getElementById("commissions").style.display ="block";
+            document.getElementById("form").style.display ="none";
+        }
+
+        function showForm(){
+            document.getElementById("home").style.display ="none";
+            document.getElementById("about").style.display ="none";
+            document.getElementById("portfolio").style.display ="none";
+            document.getElementById("events").style.display ="none";
+            document.getElementById("commissions").style.display ="none";
+            document.getElementById("form").style.display ="block";
+        }
+    
+    </script>
+</body>
+</html>
