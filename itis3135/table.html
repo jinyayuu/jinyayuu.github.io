@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Angela Yang's Angelic Yak || ITIS 3135 | Table</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Angela Yang's Angelic Yak || ITIS 3135 | Table</h1>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>HTML Tables</h2>
+            <p>We love tables in this house!</p>
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Angela Yang ay@ainnovations.co $33,333,33</li>
+                <li>Amritha Twen at@ainnovations.co $13,312</li>
+                <li>Aileen Grengor ag@ainnovations.co $324</li>
+                <li>Jason Khotical jk@ainnovations.co $346,423</li>
+                <li>Tom My tm@ainnovations.co $10</li>
+                <li>Lillya Dino ld@ainnovations.com $6,225</li>
+                <li>Andrew Loo al@ainnovations.co $409,103</li>
+                <li>Mai Lean ml@ainnovations.co $2</li>
+            </ol>
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Angela Yang</td>
+                        <td>ay@ainnovations.co</td>
+                        <td class="salary">$33,333,333</td>
+                    </tr>
+                    <tr>
+                        <td>Amritha Twen</td>
+                        <td>at@ainnovations.co</td>
+                        <td class="salary">$13,312</td>
+                    </tr>
+                    <tr>
+                        <td>Aileen Gengor</td>
+                        <td>ag@ainnovations.co</td>
+                        <td class="salary">$324</td>
+                    </tr>
+                    <tr>
+                        <td>Jason Khotical</td>
+                        <td>jk@ainnovations.co</td>
+                        <td class="salary">$346,423</td>
+                    </tr>
+                    <tr>
+                        <td>Tom My</td>
+                        <td>tm@ainnovations.co</td>
+                        <td class="salary">$10</td>
+                    </tr>
+                    <tr>
+                        <td>Lilliya Dino</td>
+                        <td>ld@ainnovations.co</td>
+                        <td class="salary">$6,225</td>
+                    </tr>
+                    <tr>
+                        <td>Andrew Loo</td>
+                        <td>al@ainnovations.co</td>
+                        <td class="salary">$409,103</td>
+                    </tr>
+                    <tr>
+                        <td>Mai Lean</td>
+                        <td>ml@ainnovations.co</td>
+                        <td class="salary">$2</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="Category">Category</th>
+                        <th id="Name">Name</th>
+                        <th id="Email">Email</th>
+                        <th id="Salary">Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" headers="Category">Marketing</td>
+                        <td headers="Name">Angela Yang</td>
+                        <td headers="Email">ay@ainnovations.co</td>
+                        <td headers="Salary" class="salary">$33,333,333</td>
+                    </tr>
+                    <tr>
+                        <td headers="Name">Amritha Twen</td>
+                        <td headers="Email">at@ainnovations.co</td>
+                        <td headers="Salary" class="salary">$13,312</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" headers="Category">Finance</td>
+                        <td headers="Name">Aileen Gengor</td>
+                        <td headers="Email">ag@ainnovations.co</td>
+                        <td headers="Salary" class="salary">$324</td>
+                    </tr>
+                    <tr>
+                        <td headers="Name">Jason Khotical</td>
+                        <td headers="Email">jk@ainnovations.co</td>
+                        <td headers="Salary" class="salary">$346,423</td>
+                    </tr>
+                    <tr>
+                        <td headers="Name">Tom My</td>
+                        <td headers="Email">tm@ainnovations.co</td>
+                        <td headers="Salary" class="salary">$10</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" headers="Category" class="category">Logistics</td>
+                        <td headers="Name">Lilliya Dino</td>
+                        <td headers="Email">ld@ainnovations.co</td>
+                        <td headers="Salary" class="salary">$6,225</td>
+                    </tr>
+                    <tr>
+                        <td headers="Name">Andrew Loo</td>
+                        <td headers="Email">al@ainnovations.co</td>
+                        <td headers="Salary" class="salary">$409,103</td>
+                    </tr>
+                    <tr>
+                        <td headers="Category" class="category">Cat Owner</td>
+                        <td headers="Name">Mai Lean</td>
+                        <td headers="Email">ml@ainnovations.co</td>
+                        <td headers="Salary" class="salary">$2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="total">Total Years</td>
+                        <td>$34,108,732</td>
+                    </tr>
+                </tbody>
+            </table>
+            <figcaption>Break Down of My Company</figcaption>
+            </figure>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/include.js"></script>
+    </body>
+</html>
