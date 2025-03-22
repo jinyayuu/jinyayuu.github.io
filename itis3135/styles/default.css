@@ -9,6 +9,43 @@ body {
    background-repeat: repeat;
 }
 
+main {
+   background-color: #ffffff;
+   border-radius: 40px;
+   border-bottom: 4px solid #087167;
+   box-shadow: 0 5px 20px #c06300;
+   margin: 20px auto;  
+   width: 90%;
+   max-width: 700px;
+   
+}
+
+.content {
+   padding:20px;
+}
+
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px) and ( max-width: 980px) {
+   main {
+      max-width: 980px;
+      width: 75%;
+   }
+   table{
+      font-size: 0.8rem;
+   }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px) and ( max-width: 600px) {
+   main {
+      max-width: 600px;
+      width: 70%;
+   }
+   table{
+      font-size: 0.6rem;
+   }
+}
+
 header nav a {
    background-color: #ffffff;
    border-radius: 15px;    
@@ -20,16 +57,6 @@ header nav a {
    padding: 5px 20px;
    text-decoration: none;
    width: fit-content;
-}
-
-main {
-   background-color: #ffffff;
-   border-radius: 40px;
-   border-bottom: 4px solid #087167;
-   box-shadow: 0 5px 20px #c06300;
-   padding: 40px;
-   margin: 20px auto;  
-   max-width: 700px; 
 }
 
 footer {
@@ -80,12 +107,16 @@ ol, .salary {
 
 table {
    border-collapse: collapse;
+   width: 90%;
+   max-width: 700px; 
+   margin: auto;
 }
 
 thead, tbody, td, th {
    border: 1px solid green;
+   max-width: fit-content;
+   
 }
-
 td, th{
    padding: 10px;
 }
