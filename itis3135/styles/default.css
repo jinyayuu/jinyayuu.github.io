@@ -94,6 +94,14 @@ figure img {
    width: 100%;
 }
 
+#introduction-form img {
+   border-radius: 30px;
+   height:100%;
+   width:auto;
+   max-width: 400px;
+   width: 100%;
+}
+
 figcaption {
    display: block;
    width: 100%;
@@ -138,6 +146,90 @@ tr .category {
 
 .total {
    text-align: right;
+}
+
+#introduction-form {
+   text-align: left;
+}
+
+#introduction-form label {
+   font-size: 20px;
+   font-variant:small-caps;
+   font-weight: bold;
+   letter-spacing: 2px;
+}
+
+#introduction-form input[type="text"], #introduction-form input[type="file"] {
+   border-radius: 15px;
+   font-family: system-ui;
+   font-size: 15px;
+   border-radius: 10px;
+   padding: 5px;
+   padding-left: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   letter-spacing: 3px;
+   color:#07892c;
+   border: 1px solid #a0c4b2;
+   width:100%;
+   max-width: 200px;
+}
+
+#introduction-form input[type="file"] {
+   width:100%;
+   max-width: 300px;
+}
+
+#introduction-form textarea{
+   text-align: left;
+   display: block;
+   box-sizing:border-box;
+   font-family: system-ui;
+   font-size: 15px;
+   padding: 5px;
+   width: 100%;
+   max-width: 500px;
+   border-radius: 15px;
+   border: 1px solid #a0c4b2;
+   color:#07892c;
+}
+
+#introduction-form input[type="button"], #introduction-form input[type="submit"], input[type="reset"], #introduction-form input[type="submit"] {
+   background-color: #07a31c;
+   border-radius: 15px;    
+   color: #ffffff;
+   font-size: 15px;
+   line-height: 25px;
+   margin: 5px;
+   padding: 0px 20px;
+   text-decoration: none;
+   width: fit-content;
+   font-weight: bold;
+   font-variant: small-caps;
+}
+
+#introduction-form input[id="delete"] {
+   background-color: #f13d5b;
+   margin-bottom: 20px;
+}
+
+input[type="reset"] {
+   background-color: #2f77eb;
+}
+
+#introduction-form input[class="courseNum"] {
+   max-width: 100px;
+}
+
+#introduction-form input[class="courseName"] {
+   max-width: 350px;
+}
+
+#introduction-form li[class="courseEntry"] {
+   background-color: #e2eee8;
+   padding: 10px;
+   padding-top: 0px;
+   border-radius: 10px;
 }
 
 h1 { 

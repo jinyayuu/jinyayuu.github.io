@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Angela Yang's Angelic Yak || ITIS 3135 | BYO Intro</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Angela Yang's Angelic Yak || ITIS 3135 | BYO Intro</h1>
+            <div data-include="components/header.html"></div>
+            <script src="scripts/include.js"></script>
+            <script src="scripts/survey.js"></script>
+        </header>
+        <main>
+            <div class="content">
+              <h2>BYO Introduction Form</h2>
+              
+                <form id="introduction-form" method="post">
+                  <label id="name-label">Name: </label> <input id="name-input" type="text" value="Angela Yang" required/><br>
+                  <label id="mascot-label">Mascot: </label> <input id="mascot-input" type="text" value="Angelic Yak" required/><br>
+
+                  <label>Upload an image: </label> <br>
+                  <img id="frame" src="images/me.jpg" alt="Uploaded user image."><br>
+                  <input type="file" id="image" accept=".png, .jpeg" onchange="preview()"><br>
+
+                  <label id="caption-label">Image Caption: </label>
+                  <textarea id="caption-input" required>With a duck plush in front of a decorated corner of posters in my room.</textarea><br>
+
+                  <label id="personal-label">Personal Background: </label> 
+                  <textarea id="personal-input" required>Born and raised in NC. Currently based in Charlotte.</textarea><br>
+
+                  <label id="professional-label">Professional Background: </label>
+                  <textarea rows="4" id="professional-input" required>I was a TA for Human Cognitive Science at UNCC and the secretary of the Asian Student Association at UNCC. Also a freelance artist who's done illustrative works, logo designing, pixel art assets, and web ui design.</textarea><br>
+
+                  <label id="academic-label">Academic Background: </label>
+                  <textarea rows="4" id="academic-input" required>Graduated from Green Hope High School. Currently at UNCC majoring in Psychology and a minor in Cognitive Science and Interactive Programming.</textarea><br>
+
+                  <label id="development-label">Background in Web Development: </label>
+                  <textarea id="development-input" required>Learned Java, dabbled in HTML+CSS, forgot C#.</textarea><br>
+
+                  <label id="platform-label">Computer Platform: </label>
+                  <textarea id="platform-input" required>Asus Windows.</textarea><br>
+
+                  <label id="funny-label">Funny Thing? </label>
+                  <textarea id="funny-input">Big duck plush (it's quite chonky)</textarea><br>
+
+                  <label id="share-label">Anything Else? </label>
+                  <textarea rows="3" id="share-input">I'm an artist. I used to do acrylic painting and Chinese calligraphy. I now primarily do digital illustrations and design work. I also play the violin.</textarea><br>
+                  
+                  <label id="courses-label">Courses I Am Taking & Why: </label> 
+                  <input id="add-course" type="button" value="Add Course" onclick="addCourse()"><br>
+                  <ul><div id="courses-container"></div></ul>
+                  
+                
+                  <br><label>REQUIRED</label>
+                    <p> 
+                      <input type="checkbox" id="agreement" value="tos" required/> I understand that what is on this page is not password protected and I will not put anything here that I don&apos;t want publicly available. 
+                    </p>
+                  <input type="reset" id="reset-button" value="Reset" onclick="resetForm()"/>
+                  <input type="submit" id="submit-button" value="Submit"/>
+                </form>
+                <div id="results"></div>
+
+            </div>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+            <script src="scripts/include.js"></script>
+        </footer>
+    </body>
+</html>
