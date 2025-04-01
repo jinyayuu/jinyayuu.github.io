@@ -105,7 +105,7 @@ function createIntroduction(event) {
     const introductionElement = document.createElement('div');
 
     let introductionCourseHTML = ``;
-    if(courseCount > 0) {
+    if (courseCount > 0) {
         introductionCourseHTML +=`<ul><ul>`;
         for (let i = 1; i < courseCount; i++){
             
