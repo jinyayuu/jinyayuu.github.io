@@ -102,6 +102,14 @@ figure img {
    width: 100%;
 }
 
+#project_overview img {
+   max-width:450px;
+   width: 100%;
+   height: auto;
+   border: solid 1px #10294f;
+   border-radius: 20px;
+}
+
 figcaption {
    display: block;
    width: 100%;
@@ -232,6 +240,20 @@ input[type="reset"] {
    border-radius: 10px;
 }
 
+#project_overview{
+   text-align: left;
+}
+
+#project_overview a{
+   color:#ffffff;
+   background-color: #a0c4b2;
+   border-radius: 5px;
+   padding: 1px;
+   text-decoration: none;
+
+}
+
+
 h1 { 
    color: #ffffff; 
    font-size: 3rem;
@@ -245,6 +267,7 @@ h1 {
 
 h2 {
    font-variant: small-caps;
+   text-align: center;
 }
 
 h3 {
@@ -254,6 +277,10 @@ h3 {
 h3 a {
    color: #07892c;
    text-decoration: none;
+}
+
+h4{
+   margin-bottom: 0px;
 }
 
 ul {
