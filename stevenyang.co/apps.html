@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>StevenYang.Co</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/67fa05deed.js" crossorigin="anonymous"></script>
+    <style>
+        #background-image {
+            max-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="page-top">
+        <div data-include="components/header.html"></div>
+        <script src="scripts/include.js"></script>
+    </header>
+    <main>
+        <img id="background-image" src="images/city-background.jpg"
+            alt="Wide camera shot of the Charlotte City's tall buildings.">
+        <section id="home">
+            <div class="center" id="project-links">
+                <h3>Apps</h3>
+                    <a href="#project1" onclick="showProject1()"><img src="images/gogh-icon.png" alt="Logo of Gogh"> Gogh <div class="details-button"><i class="fa-solid fa-arrow-right"></i></div></a>
+                    <a href="#in-development" onclick="showInDevelopment()"><img src="images/bluetray-logo.png" alt="Logo of BlueTray"> BlueTray <div class="details-button"><i class="fa-solid fa-arrow-right"></i></div></a>
+                    <a href="#in-development" onclick="showInDevelopment()"><img src="images/lightdeck-logo.png" alt="Logo for LightDeck"> LightDeck <div class="details-button"><i class="fa-solid fa-arrow-right"></i></div></a>     
+            </div>
+        </section>
+        <section id="project1" class="inactive">
+            <div class="center">
+                <a class="back-button" onclick="showHome()"><i class="fa-solid fa-arrow-left"></i></a>
+                <h3>Gogh</h3>
+                <h4>A Photo Viewer with Fluent Design</h4>
+                <img src="images/gogh-icon.png" alt="App icon for Gogh"><br>
+                <div class="quick-links">
+                    <ul>
+                        <li><a target="_blank" href="http://github.com/stevenya97">Github Repo</a></li>
+                        <li><a href="#project1-faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <p><strong>A modern photos app for Windows.</strong> Gogh is a photo viewer tool for Windows that aims
+                    to provide a modern UI for viewing and editing images. Gogh offers tools to help facilitate the
+                    creation of image datasets for data science applications. Soon to be available on the Microsoft
+                    Store. </p>
+                <img src="images/gogh-windows.png"
+                    alt="Conceptual render of 2 diagonal facing windows, one with the Gogh logo">
+                <p> I started Gogh as a way to have both a functional yet lightweight and modern UI for a photos app,
+                    with apps like IrfanView paving the way. Lots of changes to the Windows App landscape since then.
+                    UWP as a platform has been effectively dropped by Microsoft. WinUI/WinAppSDK is the successor and
+                    has been getting steady updates since I last worked on Gogh. The official Windows Photos app has
+                    recieved an overhaul as well, sunsetting the old one to a "Photos Legacy" app.</p>
+                <img src="images/gogh-mainpage.jpg" alt="In-app ui of Gogh">
+                <p> Overall love the UI
+                    direction it has gone, mostly due to advances in WinUI, but the presence of ads for Microsoft
+                    services is disappointing. Gogh will get the updated WinUI look and hope to keep things more
+                    minimal. Goal is to still support Windows 10 users, despite it sunsetting Summer 2024.</p>
+                <p>Oh yeah 'aCropalypse' vulnerability happened a while back, wondering how that extends to Gogh as well
+                    since it relies on some similar core MS libaries.</p>
+                <p>Lastly, I never released an installable binary for yall, ops :/ Need to make one to publish to MS
+                    Store, so that will be on the priority list. You'll hear from me again soon!</p>
+                <h4 id="project1-faq">FAQs</h4>
+                <ul>
+                    <li>What is Fluent Design?
+                        <p>Microsoft Fluent Design is an open source design language that provides
+                            a unified and modern look and feel across multiple mediums and devices. It is based on five
+                            core principles: Light, Depth, Motion, Material, and Scale, and focuses on creating a
+                            seamless user experience with minimal user input. It also emphasizes minimalism and
+                            responsiveness by utilizing material design elements and motion to create an immersive and
+                            interactive experience.
+                        </p>
+                    </li>
+                    <li>Why create Gogh?
+                        <p>I initially sought out a tool to quickly view and organize my image datasets.
+                            I found Windows 10 built-in Photos app to be frustratingly sluggish, bloated, and lacked
+                            modern alternatives. Solutions such as ImageGlass and IrfanView existed, but lacked the data
+                            centric features I needed, and other services such as Adobe Lightroom were not free, thus
+                            Gogh was created.
+                        </p>
+                    </li>
+                </ul>
+                <a class="top-button" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </section>
+
+        <section id="in-development" class="inactive">
+            <div class="center">
+                <a class="back-button" onclick="showHome()"><i class="fa-solid fa-arrow-left"></i></a>
+                <h3>Page In Development</h3>
+                <p>Details are still in the works. </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/include.js"></script>
+        <script src="scripts/hide-sections.js"></script>
+    </footer>
+</body>
+
+</html>

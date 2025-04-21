@@ -1,0 +1,84 @@
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px) and ( max-width: 980px) {
+    main {
+       max-width: 980px;
+       width: 75%;
+    }
+    table{
+       font-size: 0.8rem;
+    }
+ }
+ 
+ /* Rule Overrides For Mobile Devices */
+ @media screen and ( min-width: 370px) and ( max-width: 600px) {
+    main {
+       max-width: 600px;
+       width: 70%;
+    }
+    table{
+       font-size: 0.6rem;
+    }
+ }
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    font-size: 15px;
+    margin: auto;
+    max-width:80%;
+ }
+
+ .container{
+   flex-wrap: wrap;
+   display: flex;
+   align-items: center;
+   background-color: aliceblue; 
+   padding: 0px 5%;
+   border-radius: 0px 0px 40px 40px;
+}
+
+.left{
+   flex:content;
+   text-align: left;
+}
+
+.right{
+   flex: content; 
+   text-align: right;
+}
+
+nav a {
+   width:min-content;
+   text-decoration: none;
+   background-color:#ffffff;
+   padding: 10px;
+   letter-spacing: 5px;
+   margin: 10px;
+   border-radius: 10px;
+}
+
+section[id="quick-links"] a{
+   background-color: #ffffff;
+   border-radius: 15px;    
+   box-shadow: 0 5px 5px #c06300;
+   color: #087167;
+   font-size: 20px;
+   line-height: 40px;
+   margin: 5px;
+   padding: 5px 20px;
+   text-decoration: none;
+   width: fit-content;
+}
+
+section[id="hey-there"] {
+   background-color: rgb(255, 255, 255);
+   max-width: 50%;
+   margin:auto;
+}
+
+img[alt="profile-picture"] {
+   border-radius: 100%;
+   width: 300px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>StevenYang.Co</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/67fa05deed.js" crossorigin="anonymous"></script>
+    <style>
+        #background-image {
+            max-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="page-top">
+        <div data-include="components/header.html"></div>
+        <script src="scripts/include.js"></script>
+    </header>
+    <main>
+        <img id="background-image" src="images/city-background.jpg"
+            alt="Wide camera shot of the Charlotte City's tall buildings.">
+        <section>
+            <div class="center">
+                <h3>Contact</h3>
+                <p>Have an interesting proposition? Curious about one of my projects? Or maybe you have a question. Then lets chat! Happy to answer any questions you may have 😄</p>
+                <form id="contact-form" method="post">
+                    <label id="name-label" for="name-input">Name: </label> <input id="name-input" type="text" placeholder="ex: Jane Doe" required /><br>
+                    <label id="email-label" for="email-input">Email: </label> <input id="email-input" type="email" placeholder="ex: jane@doe.com" required /><br>
+                    <label >Message: </label>
+                    <textarea rows="6" id="professional-input" required></textarea><br>
+                    <input type="submit" id="submit-button" value="Send" />
+                </form>
+                <a class="top-button" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/include.js"></script>
+    </footer>
+</body>
+
+</html>
