@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/67fa05deed.js" crossorigin="anonymous"></script>
-    <style>
-        #background-image {
-            max-height: 300px;
-        }
-    </style>
 </head>
 
 <body>
@@ -21,11 +16,11 @@
         <script src="scripts/include.js"></script>
     </header>
     <main>
-        <img id="background-image" src="images/city-background.jpg"
+        <img class="background-image" src="images/city-background.jpg"
             alt="Wide camera shot of the Charlotte City's tall buildings.">
         <section id="home">
             <div class="center" id="project-links">
-                <h3>Apps</h3>
+                <h2>Apps</h2>
                     <a href="#project1" onclick="showProject1()"><img src="images/gogh-icon.png" alt="Logo of Gogh"> Gogh <div class="details-button"><i class="fa-solid fa-arrow-right"></i></div></a>
                     <a href="#in-development" onclick="showInDevelopment()"><img src="images/bluetray-logo.png" alt="Logo of BlueTray"> BlueTray <div class="details-button"><i class="fa-solid fa-arrow-right"></i></div></a>
                     <a href="#in-development" onclick="showInDevelopment()"><img src="images/lightdeck-logo.png" alt="Logo for LightDeck"> LightDeck <div class="details-button"><i class="fa-solid fa-arrow-right"></i></div></a>     
@@ -34,8 +29,8 @@
         <section id="project1" class="inactive">
             <div class="center">
                 <a class="back-button" onclick="showHome()"><i class="fa-solid fa-arrow-left"></i></a>
-                <h3>Gogh</h3>
-                <h4>A Photo Viewer with Fluent Design</h4>
+                <h2>Gogh</h2>
+                <h3>A Photo Viewer with Fluent Design</h3>
                 <img src="images/gogh-icon.png" alt="App icon for Gogh"><br>
                 <div class="quick-links">
                     <ul>
@@ -63,7 +58,7 @@
                     since it relies on some similar core MS libaries.</p>
                 <p>Lastly, I never released an installable binary for yall, ops :/ Need to make one to publish to MS
                     Store, so that will be on the priority list. You'll hear from me again soon!</p>
-                <h4 id="project1-faq">FAQs</h4>
+                <h3 id="project1-faq">FAQs</h3>
                 <ul>
                     <li>What is Fluent Design?
                         <p>Microsoft Fluent Design is an open source design language that provides
@@ -90,7 +85,7 @@
         <section id="in-development" class="inactive">
             <div class="center">
                 <a class="back-button" onclick="showHome()"><i class="fa-solid fa-arrow-left"></i></a>
-                <h3>Page In Development</h3>
+                <h2>Page In Development</h2>
                 <p>Details are still in the works. </p>
             </div>
         </section>
