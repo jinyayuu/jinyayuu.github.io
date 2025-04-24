@@ -49,33 +49,8 @@ main {
    }
 }
 
-header nav a {
-   background-color: #ffffff;
-   border-radius: 15px;    
-   box-shadow: 0 5px 5px #c06300;
-   color: #087167;
-   font-size: 20px;
-   line-height: 40px;
-   margin: 5px;
-   padding: 5px 20px;
-   text-decoration: none;
-   width: fit-content;
-}
-
 footer {
    margin: auto 15%;
-}
-
-footer nav a {
-   background-color: #ffffff;
-   border-radius: 15px;    
-   box-shadow: 0 5px 5px #c06300;
-   color: #087167;
-   line-height: 40px;
-   margin: 3px;
-   padding: 5px 20px;
-   text-decoration: none;
-   width: fit-content;   
 }
 
 figure {
@@ -286,6 +261,19 @@ a {
    background-color: #07a31c;
    padding: 3px  10px;
    border-radius: 20px;
+}
+
+header nav a, footer nav a {
+   background-color: #ffffff;
+   border-radius: 15px;    
+   box-shadow: 0 5px 5px #c06300;
+   color: #087167;
+   font-size: 20px;
+   line-height: 40px;
+   margin: 5px;
+   padding: 5px 20px;
+   text-decoration: none;
+   width: fit-content;
 }
 
 a:hover{
