@@ -1,4 +1,4 @@
-* {
+html {
     box-sizing: border-box;
 }
 
@@ -55,14 +55,18 @@ body {
     text-decoration: none;
     background-color: #ffffff;    
     box-shadow: 4px 5px 5px #c06300;  
-    max-width:min-content  
+    max-width:fit-content;
 }
 
-a:hover {
-    font-weight: bold;
-    background-color: #ffffff;
-    border-bottom: 4px solid #00a895;
-    box-shadow: 0 0px 0px #00a895;
+a {
+    text-decoration: none;
+    color: #00b19c;
+}
+
+
+.right-col nav a:hover {
+    background-color: #ffd45d;
+    box-sizing: border-box;
 }
 
  .right-col {
@@ -80,10 +84,14 @@ hr {
 p {
     font-size: 20px;
     font-family: cursive;
-    padding: 30px 50px;
+
     max-width: 80%;
     text-align: center;
     margin: auto;
+}
+
+.description{
+    padding-bottom: 30px;
 }
 
 .charlotte {
@@ -96,4 +104,8 @@ p {
 
 .linkedin {
    border-bottom: 4px solid #2f77eb;
+}
+
+.misc {
+    border-bottom: 4px solid #00b19c;
 }

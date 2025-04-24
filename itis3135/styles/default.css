@@ -1,7 +1,3 @@
-html {
-   box-sizing: border-box;
-}
-
 body {
    background-color: #ffd500;
    color: #07892c;
@@ -13,6 +9,9 @@ body {
    background-repeat: repeat;
 }
 
+p {
+   text-align: left;
+}
 main {
    background-color: #ffffff;
    border-radius: 40px;
@@ -107,6 +106,7 @@ figure img {
 }
 
 #project_overview img {
+   box-sizing: border-box;
    max-width:450px;
    width: 100%;
    height: auto;
@@ -172,6 +172,7 @@ tr .category {
 }
 
 #introduction-form input[type="text"], #introduction-form input[type="file"] {
+   box-sizing: border-box;
    border-radius: 15px;
    font-family: system-ui;
    font-size: 15px;
@@ -278,9 +279,18 @@ h3 {
    text-align: left;
 }
 
-h3 a {
-   color: #07892c;
+a {
+   color: #ffffff;
    text-decoration: none;
+   width: fit-content;
+   background-color: #07a31c;
+   padding: 3px  10px;
+   border-radius: 20px;
+}
+
+a:hover{
+   background-color: #087167;
+   color: #fff;
 }
 
 h4{
@@ -291,8 +301,24 @@ ul {
    text-align: left;
 }
 
-i {
+.caption {
    opacity: 50%;
+}
+
+
+
+#non-hw-links {
+   box-shadow: inset 0px 0px 15px #c06300;
+   margin: auto;
+   margin-top: 15px;
+   padding: 10px;
+   padding-bottom: 15px;
+   width: fit-content;
+   border-radius: 10px;
+}
+
+.center {
+   text-align: center;
 }
 
 .charlotte {
