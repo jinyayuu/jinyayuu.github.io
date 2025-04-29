@@ -20,13 +20,25 @@
         <section>
             <div class="center">
                 <h2>Contact</h2>
+                
                 <p>Have an interesting proposition? Curious about one of my projects? Or maybe you have a question. Then lets chat! Happy to answer any questions you may have 😄</p>
                 <form id="contact-form" method="post">
-                    <label id="name-label" for="name-input">Name: </label> <input id="name-input" type="text" placeholder="ex: Jane Doe" required /><br>
-                    <label id="email-label" for="email-input">Email: </label> <input id="email-input" type="email" placeholder="ex: jane@doe.com" required /><br>
+                    <label id="name-label" for="name-input">Name: </label> <input id="name-input" type="text" placeholder="ex: Jane Doe" required/><br>
+                    <label id="email-label" for="email-input">Email: </label> <input id="email-input" type="email" placeholder="ex: jane@doe.com" required/><br>
+
+                    <input id="add-info" type="button" value="Add CC Recipient:" onclick="addInfo()"><br>
+                    <ul id="info-container"></ul>
+
+                    <label>Attach an Image: </label><br>
+                    <img id="frame" src="images/imgpreview-placeholder.jpg" alt="Preview for user image."><br>
+                    <input type="file" id="image-upload" accept=".png, .jpg" onchange="preview()"><br><br>
+
                     <label >Message: </label>
-                    <textarea rows="6" id="professional-input" required></textarea><br>
-                    <input type="submit" id="submit-button" value="Send" />
+                    <textarea rows="6" id="message-input" placeholder="Tell me about yourself, your projects, and or any questions for me! Maybe even your go to coffee order ☕." ></textarea><br>
+
+                    <input type="reset" id="reset-button" value="Reset"/>
+                    <input type="submit" id="submit-button" value="Send"/> 
+                    <p id="submit-status"></p>
                 </form>
                 <a class="top-button" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>
             </div>
@@ -36,6 +48,7 @@
     <footer>
         <div data-include="components/footer.html"></div>
         <script src="scripts/include.js"></script>
+        <script src="scripts/form.js"></script>
     </footer>
 </body>
 

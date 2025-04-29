@@ -223,7 +223,10 @@ img {
 .row {
    margin: auto;
    max-width: 80%;
-   padding-top: 60px;
+}
+
+#hey-there-section>.row {
+   padding-top: 30px;  
 }
 
 .row:after {
@@ -298,12 +301,10 @@ img {
 #contact-form label {
    font-size: 30px;
    letter-spacing: 2px;
-   display: block;
    margin-bottom: 10px;
 }
 
-#contact-form input,
-textarea {
+#contact-form input:not([type="button"]):not([type="reset"]):not([type="submit"]), textarea {
    box-sizing: border-box;
    font-family: "Inter-ExtraLight", sans-serif;
    font-size: 25px;
@@ -318,6 +319,25 @@ textarea {
 #contact-form textarea {
    width: 100%;
 }
+
+#contact-form input[type="button"],[type="reset"],[type="submit"]{
+   font-family: "Inter-ExtraLight", sans-serif;
+   background-color: #175abe;
+   color: #ffffff;
+   font-weight: bold;
+   border: 0px;
+   display: inline;
+   padding: 10px;
+   width: fit-content;
+   border-radius: 10px;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+[type="reset"] {
+   background-color: #d31736;
+}
+
 
 .active {
    display: block;
@@ -359,6 +379,62 @@ a:hover,
 .indented {
    margin-top: 0px;
    margin-left: 30px;
+}
+
+#frame {
+   box-sizing: border-box;
+   border: 2px dotted  #b4b4b4;
+   height: 100%;
+   max-height: 100px;
+   object-fit: cover;
+   position: relative;
+   padding: 10px;
+   margin-left: 0px;
+}
+
+#submit-status {
+   font-family: "Inter-Regular", sans-serif;
+   display: none;
+   color: #1958b6;
+   height: fit-content;
+   
+   max-width: max-content;
+   font-size: 20px;
+   margin-left: 10px;
+   text-align: right;
+   font-style: italic;
+}
+
+#reset-button:hover {
+   background-color: #b90e2b;
+}
+
+#submit-button:hover{
+   background-color: #0b49a7;
+}
+
+@media screen and (min-width: 1200px) {
+   header,
+   main,
+   footer {
+      max-width: 50%;
+   }
+
+   footer {
+      left: 25%;
+   }
+
+   #portrait-caption {
+      font-size: 30px;
+   }
+
+   body {
+      font-size: 30px;
+   }
+
+   #contact-form input[type="button"],[type="reset"],[type="submit"], nav>ul>li {
+      font-size: 25px;
+   }
 }
 
 /* Rule Overrides For Tablet Devices */
@@ -464,4 +540,15 @@ a:hover,
       height: fit-content;
    }
 
+   #contact-form input:not([type="button"]):not([type="reset"]):not([type="submit"]), textarea {
+      width: 100%;
+   }
+
+   #contact-form input[type="button"],[type="reset"],[type="submit"]{
+      width: 100%;
+      padding: 10px 0px;
+      font-size: 25px;
+      margin-bottom: 20px;
+
+   }
 }
