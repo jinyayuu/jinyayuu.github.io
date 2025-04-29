@@ -413,7 +413,7 @@ a:hover,
    background-color: #0b49a7;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 2000px) {
    header,
    main,
    footer {
