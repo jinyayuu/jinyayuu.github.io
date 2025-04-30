@@ -6,7 +6,7 @@
     <title>StevenYang.Co | About</title>
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/67fa05deed.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/67fa05deed.js" crossorigin="anonymous"></script> <!--icons from fontawesome.com-->
 </head>
 <body>
     <header id="page-top">
@@ -16,29 +16,31 @@
         <img class="background-image" src="images/city-background.jpg" alt="Wide camera shot of the Charlotte City's tall buildings">
         <section id="about-information">
             <div class="row">
-                <div class="column left"><h2>About Me</h2></div>
-            </div>
-            <div class="row">
                 <div class="column left">
-                    <img src="images/steven-fullbody.jpg" alt="Steven sitting on steps looking towards the sky to his right, with a backdrop of a city building">
+                    <h2>About Me</h2>  <!--wrapped in divs soley for visual formatting, for h2 to line up with fullbody-img-->
+                </div> 
+            </div>
+            <div class="row"> <!--houses two divs next to eachother-->
+                <div class="column left">
+                    <img id="fullbody-img" src="images/steven-fullbody.jpg" alt="Steven sitting on steps looking towards the sky to his right, with a backdrop of a city building">
                 </div>
                 <div class="column right">
-                    <div>
+                    <div id="steven-traits">
                         <span style="background-color:#cbe2ff">Developer👩‍💻</span>
                         <span style="background-color:#fff1cb">Enthusiast📱</span>
                         <span style="background-color:#dffdf8">Photographer📸</span>
                         <span style="background-color:#ffcbcb">Gamer🎮</span>
                         <span style="background-color:#e7ffcb">Songwriter🎤</span>
                     </div>
-                    <p>I'm Steven, a software developer and photographer based in Charlotte, NC. I'm a self-starter who enjoys being challenged and learning new skills. I take pride in being able to quickly adapt to and understand new technologies and processes. Outside of work, I enjoy exploring the outdoors and capturing moments through my photography.</p>
+                    <p id="steven-description">I'm Steven, a software developer and photographer based in Charlotte, NC. I'm a self-starter who enjoys being challenged and learning new skills. I take pride in being able to quickly adapt to and understand new technologies and processes. Outside of work, I enjoy exploring the outdoors and capturing moments through my photography.</p>
                 </div> 
             </div>   
-            <a class="top-button" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>         
+            <a class="top-button" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a><!--return to top of page-->
         </section>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
-        <script src="scripts/include.js"></script>
+        <script src="scripts/include.js"></script><!--dynamicly loading headers/footers-->
     </footer>
 </body>
 </html>

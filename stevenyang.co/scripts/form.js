@@ -1,4 +1,4 @@
-function addInfo(course={number: "", name: "", description: ""}) {
+function addInfo(course={number: "", name: "", description: ""}) { //adds CC recipient fields in form
     const infoContainer = document.getElementById('info-container');
     const infoElement = document.createElement('div');
     infoElement.innerHTML = `
@@ -11,15 +11,15 @@ function addInfo(course={number: "", name: "", description: ""}) {
 
     const deleteButton = infoElement.querySelector('#delete');
     deleteButton.addEventListener('click', function() {
-        infoElement.remove();
+        infoElement.remove(); //div element created within the function so it can be deleted by the function
     });
 }
 
 function preview() {
-    frame.src=URL.createObjectURL(event.target.files[0]);
+    frame.src=URL.createObjectURL(event.target.files[0]);//when img is uploaded, frame updates to show the img
 }
 
-function clearForm(){
+function clearForm(){ //resets form to original state
     const submitStatusContainer = document.getElementById('submit-status');
     submitStatusContainer.innerHTML=``;
     submitStatusContainer.style.display ='none';
@@ -27,7 +27,7 @@ function clearForm(){
     const previewFrame = document.getElementById("frame");
     previewFrame.src = "images/imgpreview-placeholder.jpg";
     
-    document.getElementById('image-upload').value="";
+    document.getElementById('image-upload').value=""; //clears file from the upload input element
     
     const infoContainer = document.getElementById('info-container');
     infoContainer.innerHTML=``; 
@@ -38,9 +38,9 @@ function clearForm(){
 }
 
 function submitForm(event) {
-    event.preventDefault();
+    event.preventDefault(); //stops the typical "submit" event from happening
     
-    clearForm();
+    clearForm(); //clearing form before showing submition status
 
     const submitStatusContainer = document.getElementById('submit-status');
     submitStatusContainer.innerHTML=`Form Submitted! Thank You :)`;

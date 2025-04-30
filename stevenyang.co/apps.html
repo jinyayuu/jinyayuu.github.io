@@ -7,7 +7,7 @@
     <title>StevenYang.Co | Apps</title>
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/67fa05deed.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/67fa05deed.js" crossorigin="anonymous"></script> <!--icons from fontawesome.com-->
 </head>
 
 <body>
@@ -15,26 +15,26 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <img class="background-image" src="images/city-background.jpg"
-            alt="Wide camera shot of the Charlotte City's tall buildings.">
+        <img class="background-image" src="images/city-background.jpg" alt="Wide camera shot of the Charlotte City's tall buildings.">
         <section id="home">
-            <div class="center" id="project-links">
+            <div id="project-links" class="center">
                 <h2>Apps</h2>
                     <a href="#project1" onclick="showProject1()"><img src="images/gogh-icon.png" alt="Logo of Gogh"> Gogh <div class="details-button"><i class="fa-solid fa-arrow-right"></i></div></a>
                     <a href="#in-development" onclick="showInDevelopment()"><img src="images/bluetray-logo.png" alt="Logo of BlueTray"> BlueTray <div class="details-button"><i class="fa-solid fa-arrow-right"></i></div></a>
                     <a href="#in-development" onclick="showInDevelopment()"><img src="images/lightdeck-logo.png" alt="Logo for LightDeck"> LightDeck <div class="details-button"><i class="fa-solid fa-arrow-right"></i></div></a>     
             </div>
         </section>
-        <section id="project1" class="inactive">
+
+        <section id="project1" class="inactive"><!--inactive == display: none;-->
             <div class="center">
-                <a class="back-button" onclick="showHome()"><i class="fa-solid fa-arrow-left"></i></a>
+                <a class="back-button" onclick="showHome()"><i class="fa-solid fa-arrow-left"></i></a> <!--Redisiplays home section, and hides current section-->
                 <h2>Gogh</h2>
                 <h3>A Photo Viewer with Fluent Design</h3>
                 <img src="images/gogh-icon.png" alt="App icon for Gogh"><br>
                 <div class="quick-links">
                     <ul>
                         <li><a target="_blank" href="http://github.com/stevenya97">Github Repo</a></li>
-                        <li><a href="#project1-faq">FAQ</a></li>
+                        <li><a href="#project1-faq">FAQ</a></li>  <!--Auto scrolls down to faq heading-->
                     </ul>
                 </div>
                 <p><strong>A modern photos app for Windows.</strong> Gogh is a photo viewer tool for Windows that aims
@@ -77,22 +77,23 @@
                         </p>
                     </li>
                 </ul>
-                <a class="top-button" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a>
+                <a class="top-button" href="#page-top"><i class="fa-solid fa-arrow-up"></i></a> <!--return to top of page-->
             </div>
         </section>
 
-        <section id="in-development" class="inactive">
+        <section id="in-development" class="inactive"> <!--Section acts as placeholder for Apps that don't have official details yet.-->
             <div class="center">
                 <a class="back-button" onclick="showHome()"><i class="fa-solid fa-arrow-left"></i></a>
                 <h2>Page In Development</h2>
                 <p>Details are still in the works. </p>
             </div>
         </section>
+
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
-        <script src="scripts/include.js"></script>
-        <script src="scripts/hide-sections.js"></script>
+        <script src="scripts/include.js"></script> <!--dynamicly loading headers/footers-->
+        <script src="scripts/hide-sections.js"></script> <!--hides project pages-->
     </footer>
 </body>
 
